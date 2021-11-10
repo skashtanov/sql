@@ -1,3 +1,4 @@
+--
 SELECT *
 FROM book;
 
@@ -9,12 +10,14 @@ SELECT
 FROM book;
 
 
+--
 SELECT 
     title AS Название
   , author AS Автор
 FROM book;
 
 
+--
 SELECT 
     title
   , amount
@@ -22,6 +25,7 @@ SELECT
 FROM book;
 
 
+--
 SELECT 
     title
   , author
@@ -30,6 +34,7 @@ SELECT
 FROM book;
 
 
+--
 SELECT author, title, 
     ROUND(
         IF(author = 'Булгаков М.А.', 
@@ -41,6 +46,7 @@ SELECT author, title,
 FROM book;
 
 
+--
 SELECT 
     author
   , title
@@ -49,6 +55,7 @@ FROM book
 WHERE amount < 10;
         
 
+--
 SELECT 
     title
   , author
@@ -60,6 +67,7 @@ WHERE (price < 500 OR price > 600)
       (price * amount >= 5000); 
 
 
+--
 SELECT 
     title
   , author
@@ -69,6 +77,7 @@ WHERE (price BETWEEN 540.50 AND 800)
       amount IN (2, 3, 5, 7);
 
 
+--
 SELECT 
     author
   , title
@@ -77,6 +86,7 @@ WHERE (amount BETWEEN 2 AND 14)
 ORDER BY author DESC, title;
 
 
+--
 SELECT 
     title
   , author
@@ -87,6 +97,7 @@ WHERE (title LIKE '%_ %_')
 ORDER BY title;
 
 
+--
 SELECT 
     title
   , price
